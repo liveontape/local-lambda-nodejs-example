@@ -24,13 +24,19 @@ See https://github.com/localstack/localstack
 
 ## How to run
 
-### localstack
+### Run localstack to emulate AWS stack
 Easiest way to run localstack on Mac is to use docker-compose. Just open a shell in your localstack repo checkout and:
 ```console
 docker-compose-up
 ```
 
-### AWS SAM CLI
+### Apply terraform configuration to localstack
+Run terraform in the checkout folder of this repo:
+```console
+terraform apply
+```
+
+### Run AWS SAM CLI to start lambda locally
 Run SAM checkout folder of this repo:
 ```console
 sam local start-apisam local start-api
