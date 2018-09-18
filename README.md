@@ -35,6 +35,10 @@ Run terraform in the checkout folder of this repo:
 ```console
 terraform apply
 ```
+Check if things worked properly using aws-cli:
+```console
+aws --endpoint-url=http://localhost:4569 dynamodb list-tables
+```
 
 ### Run AWS SAM CLI to start lambda locally
 Run SAM checkout folder of this repo:
