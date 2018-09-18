@@ -9,5 +9,6 @@ provider "aws" {
     sqs    = "http://localhost:4576"
     lambda = "http://localhost:4574"
     sns    = "http://localhost:4575"
+    dynamodb = "http://localhost:4569"
   }
 }
